@@ -8,7 +8,25 @@ public class Pokemon {
     private int level;
     private int hp;
 
+    // constructor
+    public Pokemon(String name, int level, int hp) {
+        System.out.println("포켓몬 객체 생성(매개변수3개 생성자)!");
+        this.name = name;
+        this.level = level;
+        this.hp = hp;
+    }
 
+    public Pokemon(String name) {
+        this(name, 1, 50);
+        System.out.println("포켓몬 객체 생성(매개변수1개 생성자)!");
+        //this.name = name;
+    }
+
+    public Pokemon() {
+        System.out.println("포켓몬 객체 생성(기본 생성자)!");
+    }
+
+    // getter, setter methods
     public int getLevel() {
         return level;
     }
