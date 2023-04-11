@@ -13,7 +13,7 @@ public class PokemonGame {
 
         charizard.evolve();
         pikachu.evolve();
-        pikachu.attack();
+        charizard.attack(pikachu);
 
         System.out.println(pikachu.getLevel());
     }
