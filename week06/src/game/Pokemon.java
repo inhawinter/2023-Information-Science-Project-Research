@@ -8,25 +8,35 @@ public class Pokemon {
     private int level;
     private int hp;
 
+    private static int count = 0;  // 정적 변수 (클래스 변수)
+
     // constructor
     public Pokemon(String name, int level, int hp) {
         System.out.println("포켓몬 객체 생성(매개변수3개 생성자)!");
         this.name = name;
         this.level = level;
         this.hp = hp;
+        count++;
     }
 
     public Pokemon(String name) {
-        this(name, 1, 50);
+        //this(name, 1, 50);
         System.out.println("포켓몬 객체 생성(매개변수1개 생성자)!");
-        //this.name = name;
+        this.name = name;
+        count++;
     }
 
     public Pokemon() {
         System.out.println("포켓몬 객체 생성(기본 생성자)!");
+        count++;
     }
 
     // getter, setter methods
+
+    public static int getCount() {  // 정적 메서드, 클래스 메서드
+        return count;
+    }
+
     public int getLevel() {
         return level;
     }
@@ -64,5 +74,8 @@ public class Pokemon {
 
     void attack(Pokemon pokemon){
         System.out.println(this.name + "가(이) "+ pokemon.name +"에게 기본 공격을 시전 합니다");
+    }
+    void attack(){
+        System.out.println(this.name + "가(이) 광역 공격을 시전 합니다");
     }
 }
