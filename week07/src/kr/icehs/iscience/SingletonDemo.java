@@ -10,10 +10,10 @@ class Singleton{
         return s;
     }
 
-    @Override
-    public String toString() {
-        return "Singleton Pattern Object";
-    }
+//    @Override
+//    public String toString() {
+//        return "Singleton Pattern Object";
+//    }
 }
 
 public class SingletonDemo {
@@ -28,5 +28,7 @@ public class SingletonDemo {
         }else{
             System.out.println("Different Object.");
         }
+        System.out.println(s1);
+        System.out.println(s2);
     }
 }
