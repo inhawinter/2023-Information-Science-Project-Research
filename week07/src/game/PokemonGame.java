@@ -10,6 +10,12 @@ public class PokemonGame {
         Pokemon bulbasaur = new Pokemon();
         System.out.println(Pokemon.getCount());
 
+
+        System.out.println(squirtle.toString());
+        System.out.println(pikachu);
+        System.out.println(charizard);
+        System.out.println(bulbasaur);
+
         bulbasaur.setName("이상해");
         bulbasaur.attack();
 
