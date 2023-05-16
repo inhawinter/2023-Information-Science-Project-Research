@@ -1,9 +1,10 @@
 package game;
 
 public class Pokemon {
-    private int level;
-    private int hp;
-    private String name;
+    // private -> protected
+    protected int level;
+    protected int hp;
+    protected String name;
 
     public int getLevel() {
         return level;
