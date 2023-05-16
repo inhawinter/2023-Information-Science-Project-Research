@@ -6,12 +6,20 @@ public class PokemonGame {
         Pikachu pikachu = new Pikachu(14, 165);
         Squirtle squirtle = new Squirtle();
 
+        /*
+        The Pokemon Game class is not a child class of the Pokemon class,
+        but it is in the same package (game), so the protected variables are accessible.
+         */
+        pikachu.hp = 99;
+
+
         squirtle.attack();  // execute override method
         pikachu.attack();  // execute super(base) class method
         charizard.attack();  // execute super(base) class method and override method
 
         System.out.println(pikachu.getName());
-        System.out.println(pikachu.getHp());
+        //System.out.println(pikachu.getHp());
+        System.out.println(pikachu.hp);
 
         System.out.println(charizard.getName());
         charizard.setName("리자몽");
