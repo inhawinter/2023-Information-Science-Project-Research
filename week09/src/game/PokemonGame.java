@@ -6,6 +6,10 @@ public class PokemonGame {
         Pikachu pikachu = new Pikachu(14, 165);
         Squirtle squirtle = new Squirtle();
 
+        squirtle.attack();  // execute override method
+        pikachu.attack();  // execute super(base) class method
+        charizard.attack();  // execute super(base) class method and override method
+
         System.out.println(pikachu.getName());
         System.out.println(pikachu.getHp());
 

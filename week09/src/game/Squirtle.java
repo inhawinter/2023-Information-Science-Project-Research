@@ -15,4 +15,9 @@ public class Squirtle extends Pokemon {
         this.setLevel(level);
         this.setName("squirtle");
     }
+
+    @Override
+    public void attack() {
+        System.out.println(this.getName() + " does a wide area Water Cannon attack");
+    }
 }
