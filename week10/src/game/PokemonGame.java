@@ -4,6 +4,7 @@ public class PokemonGame {
     public static void main(String[] args) {
         Pokemon pokemon = new Pikachu(1, 35);  // upcast
         Pikachu pikachu1 = new Pikachu(14, 165);
+        //Pikachu pikachu3 = new Squirtle(1, 45);  // Squirtle is NOT a Pikachu.
 
         System.out.println(pokemon);
         System.out.println(pikachu1);
@@ -11,6 +12,11 @@ public class PokemonGame {
         pikachu1.electricInfo();
 
         Pikachu pikachu2 = (Pikachu) pokemon;  // downcast
+        Squirtle squirtle1 = (Squirtle) pokemon;
+        /*
+        Exception in thread "main" java.lang.ClassCastException: class game.Pikachu cannot be cast to class game.Squirtle (game.Pikachu and game.Squirtle are in unnamed module of loader 'app')
+	at game.PokemonGame.main(PokemonGame.java:14)
+         */
 
         //pokemon.electricInfo();  // can not access child's method
         pikachu2.electricInfo();  // accessible
