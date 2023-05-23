@@ -13,6 +13,7 @@ public class PokemonGame {
         pikachu1.attack(squirtle1);  // compatible
         pikachu1.attack(charizard1);  // compatible
         //pikachu1.attack(trainer1);  // incompatible
+        charizard1.attack(pikachu1);
 
         System.out.println(pokemon);
         System.out.println(pikachu1);
