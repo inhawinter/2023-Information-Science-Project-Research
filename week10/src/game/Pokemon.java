@@ -4,7 +4,7 @@ public abstract class Pokemon {
     protected int level;
     protected int hp;
     protected String name;
-    FlyBehavior flyable;
+    FlyBehavior flyable;  // association
 
     public void setFlyable(FlyBehavior flyable) {
         this.flyable = flyable;
