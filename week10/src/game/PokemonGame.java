@@ -2,6 +2,7 @@ package game;
 
 public class PokemonGame {
     public static void main(String[] args) {
+        // Pokemon pokemon1 = new Pokemon();  // abstract class can not initiate instance
         Trainer trainer1 = new Trainer();  // default constructor by jdk
 
         Squirtle squirtle1 = new Squirtle();

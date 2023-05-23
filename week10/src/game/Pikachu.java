@@ -14,13 +14,14 @@ public class Pikachu extends Pokemon {
         this.name = "pikachu";
     }
 
-    @Override
-    public void attack() {
-        //super.attack();
-        System.out.println(this.name + " does a wide area Electric attack");
-    }
+
 
     void electricInfo(){
         System.out.println("electric~");
+    }
+
+    @Override
+    public void attack() {
+        System.out.println(this.name + " does a wide area Electric attack");
     }
 }
