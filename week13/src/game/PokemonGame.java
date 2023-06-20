@@ -12,7 +12,12 @@ public class PokemonGame {
         //charizard1.setFlyable(new Wings());
 
         System.out.println(pikachu1);
-
+        System.out.println(pikachu1.equals(d1));
+        System.out.println(pikachu1.equals(charizard1));
+        System.out.println(pikachu1.equals(pikachu1));
+        System.out.println(Integer.toHexString(d1.hashCode()));
+        System.out.println(Integer.toHexString(charizard1.hashCode()));
+        System.out.println(Integer.toHexString(pikachu1.hashCode()));
         try{
             pikachu1.attack(d1);
         }catch (Exception e){
@@ -48,3 +53,4 @@ public class PokemonGame {
         pikachu1.performFly();
     }
 }
+
