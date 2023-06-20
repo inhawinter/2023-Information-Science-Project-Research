@@ -41,14 +41,15 @@ public abstract class Pokemon extends Animation {
 
     public abstract void attack();
 
-    public void attack(Pokemon targetPokemon) throws Exception{
-        if(targetPokemon instanceof Digimon){
-            throw new Exception("포켓몬이 아닙니다");
+    public void attack(Animation target) throws Exception{
+        if(target instanceof Digimon){
+            throw new Exception("target is Not a Pokemonster!");
+        }else if(target instanceof Pokemon) {
+            if (this instanceof Pikachu){
+                System.out.println("pika pika~");
+            }
+            Pokemon targetPokemon = (Pokemon)target; // downcast
+            System.out.println(this.name + " does a attack to " + targetPokemon.name);
         }
-
-        if (this instanceof Pikachu){
-            System.out.println("pika pika~");
-        }
-        System.out.println(this.name + " does a attack to " + targetPokemon.name);
     }
 }
