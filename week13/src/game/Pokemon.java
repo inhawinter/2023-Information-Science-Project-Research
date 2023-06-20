@@ -52,4 +52,9 @@ public abstract class Pokemon extends Animation {
             System.out.println(this.name + " does a attack to " + targetPokemon.name);
         }
     }
+
+    @Override
+    public String toString() {
+        return this.getName() + " [Hashcode: " + Integer.toHexString(hashCode()) +"]";
+    }
 }
